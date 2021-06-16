@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.RegisterFragment">
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:weightSum="1"
+        android:background="#f9f2d5"
+        android:padding="16sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginStart="8dp"
+            android:text="Chardham Tour Registration"
+            android:textColor="@color/orange"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="16dp"
+android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ru_name_til"
+            android:theme="@style/TextLabelRegisterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ru_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:drawableStart="@drawable/ic_user_login"
+                android:textSize="14sp"
+                android:drawablePadding="4dp"
+                android:hint="Name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ru_email_til"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:theme="@style/TextLabelRegisterStyle"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ru_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_message_24dp"
+                android:textSize="14sp"
+                android:drawablePadding="4dp"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ru_password_til"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:theme="@style/TextLabelRegisterStyle"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ru_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="4dp"
+                android:hint="Choose Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ru_register_btn"
+                android:textStyle="bold"
+                android:text="Create User"
+                android:layout_marginTop="18dp"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@drawable/bg_selector_white_to_orange"
+                android:layout_width="match_parent"
+                android:textColor="@color/text_orange_towhite"
+                android:layout_height="36dp" />
+
+            <ProgressBar
+                android:id="@+id/reg_progressBar"
+                style="?attr/progressBarStyle"
+                android:indeterminateTint="@color/orange"
+                android:layout_width="36dp"
+                android:padding="4dp"
+                android:elevation="8dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/ru_register_btn"
+                android:layout_height="36dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/ru_already_member"
+            android:layout_below="@+id/ru_register_btn"
+            android:text="@string/already_registered"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ru_view"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/ru_already_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/black_252525"/>
+
+            <TextView
+                android:text="&#8226;"
+                android:textSize="36sp"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:text="Register With"
+                android:padding="8sp"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="&#8226;"
+                android:textSize="36sp"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/black_252525"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

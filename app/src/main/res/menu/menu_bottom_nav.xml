@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group
+    android:id="@+id/menu">
+
+    <item android:id="@+id/profile"
+        android:title="MY PROFILE" >
+        <!-- "file" submenu -->
+        <menu>
+            <group
+                android:id="@+id/menu_profile"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/menu_my_bookings"
+                    android:icon="@drawable/ic_my_booking_24dp"
+                    app:actionLayout="@layout/menu_counter"
+                    android:title="@string/my_bookings" />
+                <item
+                    android:id="@+id/menu_my_queries"
+                    android:icon="@drawable/ic_select_package_24dp"
+                    app:actionLayout="@layout/menu_counter"
+                    android:title="@string/my_queries" />
+
+                <item
+                    android:id="@+id/menu_my_wishList"
+                    app:actionLayout="@layout/menu_counter"
+                    android:icon="@drawable/ic_wishlist_24dp"
+                    android:title="@string/my_wishlist" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/file"
+        android:title="OTHERS" >
+        <!-- "file" submenu -->
+        <menu>
+            <group
+                android:id="@+id/menu_others"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/menu_contact_us"
+                    android:icon="@drawable/ic_message_24dp"
+                    android:title="@string/cu" />
+
+                <item
+                    android:id="@+id/menu_share"
+                    android:icon="@android:drawable/ic_menu_share"
+                    android:title="@string/share_app" />
+
+                <item
+                    android:id="@+id/menu_faq"
+                    android:icon="@drawable/ic_faq"
+                    android:title="@string/faq" />
+
+                <item
+                    android:id="@+id/menu_hiw"
+                    android:icon="@drawable/ic_why_choose_us_24dp"
+                    android:title="@string/wcu"/>
+
+
+                <item
+                    android:id="@+id/menu_rate_us"
+                    android:icon="@drawable/ic_mobile_rate"
+                    android:title="Rate the app" />
+
+                <item
+                    android:id="@+id/menu_tc"
+                    android:icon="@drawable/terms_condition"
+                    android:title="@string/tc" />
+
+                <item
+                    android:id="@+id/menu_pp"
+                    android:icon="@drawable/ic_quality_control"
+                    android:title="@string/pp" />
+            </group>
+        </menu>
+    </item>
+</group>
+</menu>

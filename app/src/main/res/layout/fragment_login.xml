@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.LoginFragment">
+
+            <LinearLayout
+                android:id="@+id/text"
+                android:weightSum="1"
+                android:background="#f9f2d5"
+                android:padding="16sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/logo"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="8dp"
+                    android:text="Chardham Tour Login"
+                    android:textColor="@color/orange"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16sp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lu_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabelLoginStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:hint="Email"
+                        android:paddingStart="4dp"
+                        android:drawableStart="@drawable/ic_message_24dp"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lu_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lu_username"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="4dp"
+                    android:theme="@style/TextLabelLoginStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:hint="Password"
+                        android:paddingStart="4dp"
+                        android:drawableStart="@drawable/ic_password"
+                        android:inputType="textPassword"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/lu_login_btn"
+                    android:textStyle="bold"
+                    android:text="Login"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/lu_password"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/text_white_toblack"
+                    android:background="@drawable/bg_selector_corner_orange_todark_orange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="36dp" />
+
+                <ProgressBar
+                    android:id="@+id/login_progressBar"
+                    style="?attr/progressBarStyle"
+                    android:indeterminateTint="@color/white"
+                    android:layout_width="32dp"
+                    android:padding="4dp"
+                    android:elevation="8dp"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignTop="@+id/lu_login_btn"
+                    android:layout_height="36dp" />
+
+                <TextView
+                    android:id="@+id/lu_non_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lu_login_btn"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="4dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/register_now"
+                    android:textColor="@color/black_252525"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lu_reset_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lu_non_member"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="12dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="reset password?"
+                    android:textColor="#E53935"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lu_view"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@+id/lu_reset_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="120dp"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/black_252525"/>
+
+                    <TextView
+                        android:text="&#8226;"
+                        android:textSize="36sp"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:text="Login With"
+                        android:padding="8sp"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="&#8226;"
+                        android:textSize="36sp"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/black_252525"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+</LinearLayout>

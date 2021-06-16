@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.AccountFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/user_detail"
+                layout="@layout/header_slide_menu"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        <TextView
+            android:text="My profile"
+            android:textAllCaps="true"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/my_bookings"
+          android:text="My Bookings"
+          android:padding="16sp"
+          android:foreground="?android:selectableItemBackground"
+          android:textSize="15sp"
+          android:drawableStart="@drawable/ic_my_booking_24dp"
+          android:drawablePadding="8sp"
+          android:fontFamily="sans-serif-condensed"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:textColor="@color/black_252525"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/my_queries"
+            android:text="My Queries"
+            android:layout_marginTop="2dp"
+            android:padding="16sp"
+            android:drawableStart="@drawable/ic_select_package_24dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:foreground="?android:selectableItemBackground"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/my_whislist"
+            android:text="My Whislist"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/ic_wishlist_24dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Others"
+            android:textAllCaps="true"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/my_contact_us"
+            android:text="Contact Us"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:foreground="?android:selectableItemBackground"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_message_24dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/faq"
+            android:text="FAQ"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:foreground="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_faq"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/why_choose_us"
+            android:text="Why Choose Us"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:foreground="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_why_choose_us_24dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/share_app"
+            android:text="Share the app"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:drawableStart="@android:drawable/ic_menu_share"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/rate_app"
+            android:text="Rate the app"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:foreground="?android:selectableItemBackground"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_mobile_rate"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/t_c"
+            android:text="Terms and Condition"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:foreground="?android:selectableItemBackground"
+            android:drawableStart="@drawable/terms_condition"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/p_p"
+            android:text="Privacy Policy"
+            android:padding="16sp"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/ic_quality_control"
+            android:gravity="center_vertical"
+            android:drawablePadding="8sp"
+            android:foreground="?android:selectableItemBackground"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/white"
+            android:textColor="@color/black_252525"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>

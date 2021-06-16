@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/review_profile"
+            android:src="@drawable/ic_call_us"
+            android:layout_marginEnd="4dp"
+            android:layout_width="62dp"
+            android:layout_height="62dp"/>
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:orientation="horizontal"
+            android:layout_margin="6dp"
+            android:weightSum="1"
+            android:layout_toEndOf="@id/review_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/review_reviewer_name"
+                android:text="..."
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="16sp"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/review_time"
+                android:text="Review on"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_alignStart="@+id/top"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/review_reviewer_rating"
+                android:text="4.5"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RatingBar
+                android:id="@+id/review_ratebar"
+                android:text="@string/banner_sub_title"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
+                android:rating="4"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text12"
+            android:textSize="12sp"
+            android:text="About Trip !!"
+            android:paddingTop="2dp"
+            android:textColor="@color/orange"
+            android:layout_below="@+id/review_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_below="@+id/text12"
+            android:textSize="15sp"
+            android:textColor="@color/black_252525"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/banner_sub_title"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

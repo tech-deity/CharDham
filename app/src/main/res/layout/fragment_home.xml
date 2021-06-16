@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_above="@+id/home_plan_button_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/home_search_et"
+                            android:layout_margin="24dp"
+                            android:textSize="12sp"
+                            android:padding="8dp"
+                            android:focusableInTouchMode="false"
+                            android:elevation="4dp"
+                            android:hint="@string/search_text"
+                            android:drawableEnd="@drawable/baseline_search_24"
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"/>
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/home_banner_vp"
+                            android:background="#E9E9E9"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"/>
+                        <LinearLayout
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/bannerTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/courgette"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/bannerSubTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oswald_light"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:textColor="@color/off_white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <include
+                        android:id="@+id/home_trending_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        layout="@layout/view_category_type_one"/>
+                    <include
+                        android:id="@+id/home_layout_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="4dp"
+                        layout="@layout/view_category_type_two"/>
+
+                    <include
+                        android:id="@+id/home_call_us_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        layout="@layout/view_callus"/>
+
+                    <include
+                        android:id="@+id/home_layout_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="4dp"
+                        layout="@layout/view_category_type_two"/>
+
+                    <include
+                        android:id="@+id/home_layout_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        layout="@layout/view_category_type_three"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/off_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="12sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textAlignment="center"
+                        android:text="@string/customize_book_amazing_chardham_tour_packages_with"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="@string/chardham_tour_packages"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/static_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"/>
+
+            </LinearLayout>
+
+                    <include
+                        android:id="@+id/home_layout_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="4dp"
+                        layout="@layout/view_category_type_two"/>
+
+                    <include
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/content_bottom_homelay"/>
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <Button
+                android:id="@+id/home_plan_button_bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:textSize="13sp"
+                android:text="Select your desired travel package"
+                android:background="@color/orange"
+                android:textColor="@color/text_white_toblack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@drawable/ic_chat_24dp"
+        android:layout_width="wrap_content"
+        app:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="18sp"/>
+
+</FrameLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/placeImage"
+            android:src="@drawable/default_image"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <View
+            android:layout_alignTop="@+id/placeImage"
+            android:layout_alignBottom="@+id/placeImage"
+            android:background="@color/black"
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/placeName"
+            android:text="Chardham yatra"
+            android:textSize="20sp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/placePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeName"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:text="Rs. 116000/-"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tour_dur"
+            android:text="Tour-Duration:"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/placeImage"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"
+            android:layout_marginStart="8sp"
+            android:padding="4sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/placeDuration"
+            android:text="05 Days and 04 night"
+            android:layout_toEndOf="@+id/tour_dur"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_below="@+id/placeImage"
+            android:layout_alignTop="@+id/tour_dur"
+            android:textSize="14sp"
+            android:padding="4sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/cities"
+            android:text="Destination\nCovered:"
+            android:layout_below="@+id/tour_dur"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignStart="@+id/tour_dur"
+            android:padding="4sp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/placeCovered"
+            android:text="Delhi-gurgoan-extra"
+            android:layout_toEndOf="@+id/cities"
+            android:layout_below="@+id/tour_dur"
+            android:textSize="12sp"
+            android:padding="4sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignTop="@+id/cities"
+            android:minHeight="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <include layout="@layout/view_layout_accomadation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/placeCovered"
+            android:id="@+id/accomadation"/>
+
+        <Button
+            android:id="@+id/get_quotes"
+            android:text="Get Quotes"
+            android:fontFamily="sans-serif-condensed"
+          android:layout_below="@+id/accomadation"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

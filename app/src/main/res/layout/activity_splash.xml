@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.SplashActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/all_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/top_sky"
+        android:src="@drawable/sky"
+        android:layout_marginTop="-25dp"
+        android:layout_alignParentTop="true"
+        android:tint="@color/com_facebook_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/logo_rotate"
+        android:layout_above="@+id/text_chardham"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+
+    <TextView
+        android:id="@+id/text_chardham"
+        android:layout_centerInParent="true"
+        android:text="Chardham Tour"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/courgette"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/top_left_heli"
+            android:src="@drawable/ic_helicopter_left"
+            android:layout_alignTop="@+id/bottom_screen"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="-30dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="120dp"
+            android:layout_height="52dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:text="Yatra App For Young Generation"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:layout_below="@+id/text_chardham"
+        android:textColor="@color/black_252525"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:indeterminate="false"
+            android:layout_below="@+id/text2"
+            android:indeterminateTint="@color/orange"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+
+    <ImageView
+        android:id="@+id/logo_up"
+        android:src="@drawable/logo_up"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/top_right_heli"
+        android:src="@drawable/ic_helicopter_right"
+        android:layout_alignTop="@+id/bottom_screen"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="28sp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="140dp"
+        android:layout_height="72dp"/>
+
+    <ImageView
+        android:id="@+id/bottom_screen"
+        android:src="@drawable/ic_image_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

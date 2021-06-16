@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.StepOneFragment">
+
+    <RelativeLayout
+        android:background="@color/off_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_back"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <ScrollView
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/enquiry_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            app:cardCornerRadius="4dp"
+            android:layout_margin="4sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/booking_detail_layout"
+                layout="@layout/content_program"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Destination *"
+                        android:padding="8sp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/tour_destination_covered"
+                        android:drawablePadding="8dp"
+                        android:layout_marginTop="8sp"
+                        android:textColor="@color/black_252525"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:id="@+id/enquiry_destination"
+                        android:hint="Select Destination"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:textSize="15sp"
+                        android:inputType="none"
+                        android:paddingStart="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="16sp"
+                        android:text="Tour Date *"
+                        android:padding="8sp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:drawableTint="@color/orange"
+                        android:drawableStart="@drawable/ic_date_range_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black_252525"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/enquiry_dateEt"
+                        android:hint="12 September 2019"
+                        android:textSize="15sp"
+                        android:focusableInTouchMode="false"
+                        android:paddingStart="16sp"
+                        android:paddingEnd="16sp"
+                        android:drawablePadding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_marginTop="16sp"
+                        android:text="Departure *"
+                        android:padding="8sp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/tour_destination_covered"
+                        android:drawablePadding="8dp"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/black_252525"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/enquiry_city"
+                        android:hint="Enter Your City"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:layout_marginTop="4sp"
+                        android:paddingStart="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:id="@+id/enquiry_state"
+                        android:hint="Enter your state"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:layout_marginTop="4sp"
+                        android:paddingStart="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <EditText
+                        android:id="@+id/enquiry_country"
+                        android:hint="Enter your country"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:paddingStart="16sp"
+                        android:layout_marginTop="4sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_marginTop="16sp"
+                        android:text="Phone No. *"
+                        android:padding="8sp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black_252525"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:text="+91"
+                            android:textSize="15sp"
+                            android:paddingStart="16sp"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/enquiry_phone"
+                            android:hint="Mobile Number"
+                            android:inputType="phone"
+                            android:textSize="15sp"
+                            android:maxLength="10"
+                            android:paddingStart="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="16sp"
+                        android:text="Email Address *"
+                        android:padding="8sp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_message_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@color/black_252525"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/enquiry_email"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email Address"
+                        android:textSize="15sp"
+                        android:paddingStart="16sp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/enquiry_send_btn"
+            android:text="Start booking"
+            android:layout_margin="4dp"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</FrameLayout>

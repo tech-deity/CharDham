@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginRight="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/placeImage"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:foreground="@drawable/overlay_black"
+            android:src="@drawable/default_image"
+            android:layout_width="96dp"
+            android:layout_height="92dp"/>
+
+        <TextView
+            android:id="@+id/placeName"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignEnd="@+id/placeImage"
+            android:textAlignment="center"
+            android:layout_alignStart="@+id/placeImage"
+            android:maxLines="2"
+            android:padding="3sp"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activity.LoginAndRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/lr_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="46sp" />
+
+            <Button
+                android:id="@+id/login_with_facebook"
+                android:text="Facebook"
+                android:padding="8sp"
+                android:elevation="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_facebook"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"/>
+
+        </LinearLayout>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:paddingTop="15dp"
+            android:visibility="gone"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="4sp"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16sp"
+            android:text="@string/Later"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black_252525"
+            android:textSize="15sp"
+            android:padding="16sp"
+            />
+
+    </LinearLayout>
+</ScrollView>

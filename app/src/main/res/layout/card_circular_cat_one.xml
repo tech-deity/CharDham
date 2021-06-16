@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:layout_marginEnd="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/placeImage"
+        android:src="@drawable/default_image"
+        android:layout_gravity="center"
+        android:maxWidth="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:id="@+id/placeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:minWidth="80dp"
+        android:text="badrinath"
+        android:maxWidth="120dp"
+        android:textAlignment="center"
+        android:textColor="@color/black_252525"
+        android:textStyle="bold" />
+
+</LinearLayout>

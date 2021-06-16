@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardElevation="4dp"
+    app:cardCornerRadius="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/ic_save_time"
+                android:scaleType="fitXY"
+                android:padding="8dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/title"
+                android:text="SAVE TIME"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:text="@string/no_need_to_surf_multiple_sites_for_packages_quotes_travel_plans"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

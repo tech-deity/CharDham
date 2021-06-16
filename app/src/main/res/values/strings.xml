@@ -1,0 +1,78 @@
+<resources>
+
+    <string name="app_name">ChardhamTour</string>
+
+    <!--    Configuration-->
+
+    <string name="config_file">in.chardham.chardhamtour.config_file</string>
+    <string name="config_login">in.chardham.chardhamtour.config_login</string>
+    <string name="config_user_id">in.chardham.chardhamtour.config_user_id</string>
+    <string name="config_user_name">in.chardham.chardhamtour.config_user_name</string>
+    <string name="config_user_email">in.chardham.chardhamtour.config_user_email</string>
+    <string name="config_user_phone">in.chardham.chardhamtour.config_user_phone</string>
+    <string name="config_profile">in.chardham.chardhamtour.config_profile</string>
+    <string name="config_provider_id">in.chardham.chardhamtour.config_provider_id</string>
+    <string name="config_provider">in.chardham.chardhamtour.config_provider</string>
+
+    <!--    application-data -->
+
+    <string name="config_pp">in.chardham.chardhamtour.config_pp</string>
+    <string name="config_tc">in.chardham.chardhamtour.config_tc</string>
+    <string name="config_chardham_email">in.chardham.chardhamtour.config_chardham_email</string>
+    <string name="config_chardham_phone">in.chardham.chardhamtour.config_chardham_phone</string>
+    <string name="config_hiw">in.chardham.chardhamtour.config_hiw</string>
+    <string name="config_faq">in.chardham.chardhamtour.config_faq</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="bpd">For Best Packages and Deal</string>
+    <string name="call_us">Call Us Now,</string>
+    <string name="banner_sub_title">...</string>
+    <string name="view_all">View all</string>
+    <string name="start_from">Start From </string>
+    <string name="search_text">Packages, Destination and Yatras</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="tc">Terms and Condition</string>
+    <string name="pp">Privacy Policy</string>
+    <string name="wcu">Why Choose Us</string>
+    <string name="faq">FAQ</string>
+    <string name="cu">Contact Us</string>
+    <string name="share_app">Share the app</string>
+    <string name="my_wishlist">My WishList</string>
+    <string name="my_queries">My Queries</string>
+    <string name="my_bookings">My Bookings</string>
+
+    <!--    Google App Integration Keys-->
+
+<!--      <string name="google_app_id">AIzaSyCdQdJQV8yjvn3yzECgebzhu8ULmmvHL6s</string>-->
+      <string name="google_app_id">AIzaSyBtcmYN1EfXEUSJkhpuFJzd1kVpaJFmJrU</string>
+
+
+    <string name="facebook_app_id">972137766455410</string>
+    <string name="fb_login_protocol_scheme">fb972137766455410</string>
+
+
+
+    <string name="merchant_name">Chardham Tour</string>
+    <string name="bot_link">https://v2.zopim.com/widget/livechat.html?api_calls=%5B%5D&amp;hostname=www.chardhamtour.in&amp;key=vGdeZsbS4mpQc4KVWtF66ywbqa8QCWgZ&amp;lang=en&amp;</string>
+    <string name="no_internet">No internet Connection Found</string>
+    <string name="no_need_to_surf_multiple_sites_for_packages_quotes_travel_plans">No need to surf Multiple Sites for packages, quotes, travel plans</string>
+    <string name="compare_negotiate_choose_the_best_from_multiple_options"><![CDATA[Compare, Negotiate & Choose the best from multiple options]]></string>
+    <string name="get_multiple_itineraries_personalised_suggestions_from_our_travel_agents"><![CDATA[Get Multiple Itineraries & Personalised Suggestions from our Travel agents]]></string>
+    <string name="you_can_book_online_chardham_tour_package_with_all_payment_getway">You can book online chardham tour package with all payment getway</string>
+    <string name="of_500_hotels_reliable_authentic_travel_guides_in_chardham"><![CDATA[Of 500+ Hotels Reliable & Authentic Travel Guides in Chardham]]></string>
+    <string name="customize_book_amazing_chardham_tour_packages_with"><![CDATA[Customize & Book Amazing Chardham Tour Packages]]></string>
+    <string name="chardham_tour_packages">Chardham Tour Packages</string>
+    <string name="Later"><u>Do it later!</u></string>
+    <string name="already_registered"><u>Already Registered</u></string>
+    <string name="register_now"><u>Register Now</u></string>
+
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

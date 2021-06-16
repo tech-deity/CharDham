@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8sp"
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/helicopter"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_helicopter"
+            android:padding="8dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+
+        <TextView
+            android:text="Helicopter"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/hotels"
+        android:layout_weight="1"
+        android:layout_marginStart="6sp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/hotel"
+            android:padding="8dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+
+        <TextView
+            android:text="Hotels"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pickup"
+        android:layout_weight="1"
+        android:layout_marginStart="6sp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:text="Pick Up"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meal"
+        android:layout_weight="1"
+        android:layout_marginStart="6sp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/meal" />
+
+        <TextView
+            android:text="Meals"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sightSeeing"
+        android:layout_weight="1"
+        android:layout_marginStart="6sp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sightseeing" />
+
+        <TextView
+            android:text="SightSeeing"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
